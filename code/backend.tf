@@ -10,10 +10,11 @@ terraform {
 
     # Configuration values provided at init time:
      bucket        = "terraform-state-1773300581"
-     key           = "dev/terraform.tfstate"  # Will be dev or prod
+     key           = "env/terraform.tfstate"  # Will be dev or prod
      region        = "us-east-1"
      use_lockfile  = true  # S3 native state locking (Terraform 1.10.0+)
      encrypt       = true
      
   }
 }
+
